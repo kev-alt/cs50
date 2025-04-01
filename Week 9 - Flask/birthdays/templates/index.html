@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>🎉 Birthday Tracker 🎉</h1>
+
+    <!-- Form to add a birthday -->
+    <form action="/" method="post">
+        <input name="name" type="text" placeholder="Name" required>
+        <input name="month" type="number" min="1" max="12" placeholder="Month" required>
+        <input name="day" type="number" min="1" max="31" placeholder="Day" required>
+        <input type="submit" value="Add Birthday">
+    </form>
+
+    <!-- Display existing birthdays -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Month</th>
+                <th>Day</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in birthdays %}
+            <tr>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>
+                    <form action="/delete/{{ row[0] }}" method="post">
+                        <input type="submit" value="Delete">
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
