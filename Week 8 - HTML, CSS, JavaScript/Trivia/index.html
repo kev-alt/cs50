@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Trivia Quiz!</h1>
+
+      <div class="section">
+        <h2>Part 1: Multiple Choice</h2>
+        <hr>
+        <h3>What is the capital of Turkey?</h3>
+        <button class="option">Istanbul</button>
+        <button class="option">Ankara</button>
+        <button class="option">Izmir</button>
+        <p id="feedback-mc"></p>
+      </div>
+
+      <div class="section">
+        <h2>Part 2: Free Response</h2>
+        <hr>
+        <h3>What is the highest mountain in Turkey?</h3>
+        <input type="text" id="fr-answer" placeholder="Your answer here">
+        <button id="check-fr">Check Answer</button>
+        <p id="feedback-fr"></p>
+      </div>
+    </div>
+  </body>
+</html>

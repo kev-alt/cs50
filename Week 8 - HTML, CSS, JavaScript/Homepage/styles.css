@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #ffe0f0, #ffc0cb);
+    margin: 0;
+    padding: 0;
+    color: #4b006e;
+  }
+
+  /* Header Styles */
+  header {
+    background-color: #ffb6c1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 1px 1px #cc6699;
+  }
+
+  /* Navigation Menu */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  nav li {
+    display: inline;
+    margin: 0 15px;
+  }
+
+  nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Main Content */
+  main {
+    background-color: #fff0f5;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  h2, h3 {
+    color: #cc3366;
+  }
+
+  /* Lists */
+  ul {
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+
+  /* Buttons */
+  button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  button:hover {
+    background-color: #ff85c1;
+  }
+
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+  }
+
+  form input, form textarea {
+    padding: 10px;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #fff0f5;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    background-color: #ffc0cb;
+    color: #fff;
+    border-top: 2px dashed #fff;
+    margin-top: 50px;
+  }
